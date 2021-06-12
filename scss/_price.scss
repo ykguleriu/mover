@@ -1,0 +1,168 @@
+/* Feature Slider Area css
+============================================================================================ */
+.price_plan_area{
+    background: #f5f7f9;
+    padding: 100px 0px; 
+    .main_title{
+        padding-bottom: 60px;
+    }
+}
+.price_plan_inner{
+    .col-sm-12{
+        .price_plan_item{
+            @media(max-width: 991px){
+                max-width: 345px;
+                margin: 30px auto 0px;
+            }
+        }
+    }
+    .col-md-4{
+        &:first-child{
+            .price_plan_item{
+                @media(max-width: 767px){
+                    margin-top: 0px;
+                }
+            }
+        }
+    }
+}
+.price_plan_item{
+    text-align: center;
+    @media(max-width: 767px){
+        max-width: 345px;
+        margin: 30px auto 0px;
+    }
+    .pricing_title{
+        background: $baseColor;
+        border-bottom: 10px solid #84a6ed;
+        h3{
+            font-family: $rob;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 24px;
+            line-height: 70px;
+        }
+    }
+    .pricing_main{
+        background: #fff;
+        border: 1px solid #e1e1e1;
+        border-top: none;
+        .price{
+            padding: 60px 0px 70px 0px; 
+            h4{
+                font-size: 50px;
+                font-family: $rob;
+                font-weight: 300;
+                span{
+                    font-size: 22px;
+                }
+            }
+        }
+        ul{
+            padding: 0px 30px 0px 30px;
+            li{
+                a{
+                    font-size: 14px;
+                    color: $pfont;
+                    line-height: 50px;
+                    border-top: 1px solid #ebebeb;
+                    display: block;
+                }
+            }
+        }
+        .more_btn{
+            margin-top: 25px;
+            margin-bottom: 35px;
+        }
+    }
+}
+
+.price_faq_area{
+    padding: 90px 0px;
+}
+
+.price_faq_inner{
+    .panel-group{
+        padding-top: 15px;
+        .panel{
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            margin-bottom: 15px;
+            .panel-heading{
+                padding: 0px;
+                border: none;
+                .panel-title{
+                    a{
+                        display: block;
+                        border: none;
+                        background: $baseColor;
+                        font-size: 16px;
+                        color: #fff;
+                        line-height: 60px;
+                        padding-left: 20px;
+                        font-weight: normal;
+                        font-family: $rob;
+                        letter-spacing: .45px;
+                        position: relative;
+                        @media(max-width: 600px){
+                            padding-left: 50px;
+                            line-height: 26px;
+                            padding-top: 15px;
+                            padding-bottom: 15px;
+                        }
+                        i{
+                            width: 25px;
+                            height: 25px;
+                            border-radius: 50%;
+                            border: 1px solid #fff;
+                            text-align: center;
+                            line-height: 22px;
+                            margin-right: 15px;
+                            &.fa-angle-down{
+                                display: none;
+                            }
+                            @media(max-width: 600px){
+                                padding-right: 0px;
+                                position: absolute;
+                                left: 10px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                        &.collapsed{
+                            background: #f6f6f6;
+                            color: #363636;
+                            font-weight: normal;
+                            font-family: $rob;
+                            i{
+                                border: 1px solid #363636;
+                            }
+                            i.fa-angle-right{
+                                display: none;
+                            }
+                            i.fa-angle-down{
+                                display: inline-block;
+                            }
+                        }
+                    }
+                }
+            }
+            .panel-collapse{
+                .panel-body{
+                    border: 1px solid #d8d8d8;
+                    padding: 22px 37px 22px 22px;
+                    color: #767676;
+                    font-size: 16px;
+                    font-family: $rob;
+                    line-height: 28px;
+                    letter-spacing: .25px;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
+
+/* Feature Slider Area css
+============================================================================================ */

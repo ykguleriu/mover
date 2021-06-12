@@ -1,0 +1,321 @@
+/* Feature Slider Area css
+============================================================================================ */
+
+.main_feature_area{
+    overflow: hidden;
+    background: #f5f7f9;
+    display: flex;
+    @media(max-width: 1199px){
+        display: block;
+    }
+}
+.left_feature_content{
+    width: calc(50% + 210px);
+    float: left;
+    overflow: hidden;
+    align-self: center;
+    flex: 1;
+    vertical-align: middle;
+    @media(max-width: 1199px){
+        width: 100%;
+        float: none;
+        padding-top: 60px;
+    }
+    @media(max-width: 500px){
+        padding: 0px 15px;
+    }
+}
+.left_feature_inner_text{
+    max-width: 780px;
+    float: right;
+    @media(max-width: 1199px){
+        float: none;
+        margin: auto;
+    }
+    .media{
+        width: calc(100% / 2);
+        float: left;
+        overflow: hidden;
+        padding-right: 68px;
+        margin-top: 0px;
+        margin-bottom: 76px;
+        @media(max-width: 767px){
+            padding-right: 50px;
+        }
+        @media(max-width: 600px){
+            padding-right: 0px;
+        }
+        @media(max-width: 500px){
+            width: 100%;
+            float: none;
+        }
+        .media-left{
+            padding-right: 20px;
+            .social-link{
+                height: 71px;
+                width: 71px;
+               
+            }
+            @media(max-width: 400px){
+                padding-right: 15px;
+            }
+        }
+        .media-body{
+            vertical-align: middle;
+            h4{
+                font-size: 16px;
+                color: #2f2f30;
+                font-family: $rob;
+                font-weight: bold;
+                padding-bottom: 10px;
+            }
+            p{
+                font-size: 15px;
+                line-height: 26px;
+                font-family: $rob;
+                color: $pfont;
+            }
+        }
+        &:nth-last-child(-n+2){
+            margin-bottom: 0px;
+            @media(max-width: 500px){
+                margin-bottom: 76px;
+            }
+        }
+        &:last-child{
+            @media(max-width: 500px){
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+.right_feature_image{
+    width: calc(50% - 210px);
+    float: right;
+    overflow: hidden;
+    @media(max-width: 1199px){
+        width: 100%;
+        float: none;
+        margin-top: 50px;
+        text-align: center;
+    }
+    img{
+        width: 100%;
+        @media(max-width: 1420px){
+            width: auto;
+        }
+        @media(max-width: 1199px){
+            width: 100%;
+        }
+    }
+}
+
+.home_feature_icon{
+    padding: 100px 0px;
+    .left_feature_inner_text{
+        margin-bottom: -50px;
+        overflow: hidden;
+        max-width: none;
+        float: none;
+        padding-top: 0px;
+        .media{
+            padding-right: 0px;
+            width: 100%;
+            margin-bottom: 50px;
+        }
+    }    
+}
+
+.left_bullets_area{
+    background: #f5f7f9;
+    padding: 100px 0px;
+    @media(max-width: 767px){
+        padding: 60px 0px 60px 0px;
+    }
+    .analysis_market{
+        margin-top: 0px;
+        ul{
+            margin-left: 25px;
+            li{
+                a{
+                    position: relative;
+                    i{
+                        color: $baseColor;
+                        position: absolute;
+                        left: -25px;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        @include transition;
+                    }
+                }
+                &:hover{
+                    a{
+                        i{
+                            left: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/* End Feature Slider Area css
+============================================================================================ */
+
+/* Job Requirement Area css
+============================================================================================ */
+.open_position_area{
+    padding: 100px 0px;
+}
+
+.open_position_inner{
+    .section_title{
+        padding-bottom: 33px;
+        padding-top: 40px;
+        h2{
+            font-size: 24px;
+        }
+    }
+    .panel-group{
+        margin-bottom: 0px;
+        .panel-default{
+            border-radius: 0px;
+            border-color: #e5e5e5;
+            margin-top: 20px;
+            &:first-child{
+                margin-top: 0px;
+            }
+            .panel-heading{
+                padding: 0px;
+                border-color: #e5e5e5;
+                .panel-title{
+                    a{
+                        display: block;
+                        padding: 0px 20px;
+                        font-size: 18px;
+                        font-family: $rob;
+                        line-height: 50px;
+                        background: $baseColor;
+                        color: #fff;
+                        font-weight: bold;
+                        letter-spacing: .36px;
+                        i{
+                            float: right;
+                            line-height: 50px;
+                            @media(max-width: 400px){
+                                line-height: 32px;
+                                position: absolute;
+                                right: 15px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                            }
+                        }
+                        &.collapsed{
+                            background: #fafafa;
+                            color: $dip;
+                        }
+                        @media(max-width: 400px){
+                            line-height: 30px;
+                            padding: 10px 20px;
+                            position: relative;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        .panel-collapse{
+            .panel-body{
+                padding: 30px 38px 60px 40px;
+                background: #fafafa;
+                @media(max-width: 480px){
+                    padding: 30px 20px 60px 20px;
+                }
+                h3{
+                    font-size: 20px;
+                    font-family: $rob;
+                    font-weight: 600;
+                    color: $dip;
+                    padding-bottom: 15px;
+                }
+                p{
+                    font-size: 16px;
+                    line-height: 28px;
+                    color: #797979;
+                    letter-spacing: .44px;
+                    font-family: $rob;
+                    padding-bottom: 10px;
+                    font-weight: normal;
+                    & + p{
+                        padding-bottom: 0px;
+                    }    
+                }
+                .submit_blue{
+                    line-height: 46px;
+                    margin-top: 40px;
+                }
+            }
+        }
+    }
+}
+/* End Job Requirement Area css
+============================================================================================ */
+
+/* 404 Area css
+============================================================================================ */
+.error_area{
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: "";
+        background: rgba(254, 254, 254, .5);
+        background-size: cover;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+    .error_content_inner{
+        text-align: center;
+        padding: 140px 0px 150px 0px;
+        img{
+            max-width: 100%;
+            margin-bottom: 40px;
+        }
+        h1{
+            color: $baseColor;
+            font-size: 150px;
+            font-family: $rob;
+            font-weight: normal;
+        }
+        h3{
+            font-family: $rob;
+            font-size: 36px;
+            color: $dip;
+            padding: 10px 0px 35px 0px;
+        }
+    }    
+}
+
+/* End 404 Area css
+============================================================================================ */
+
+/* Shortcode Page Area css
+============================================================================================ */
+.button_variation{
+    background: #f5f7f9;
+    text-align: center;
+    padding: 50px 0px 35px 0px;
+    .col-sm-4{
+        @media(max-width: 767px){
+            margin-bottom: 20px;
+            &:last-child{
+                margin-bottom: 0px;
+            }
+        }
+    }
+}
+/* End Shortcode page Area css
+============================================================================================ */

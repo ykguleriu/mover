@@ -1,0 +1,325 @@
+/* Header Top Area css
+============================================================================================ */
+
+.main_header_area {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 22;
+    &+section,
+    &+div,
+    &+.row {
+        margin-top: 158px;
+        @media(max-width: 991px) {
+            margin-top: 141px;
+        }
+        @media(max-width: 480px) {
+            margin-top: 125px;
+        }
+    }
+}
+
+.header_top {
+    padding: 18px 0px;
+    vertical-align: bottom;
+    .pull-left {
+        a {
+            line-height: 55px;
+        }
+    }
+    .pull-right {
+        vertical-align: middle;
+        border-right-width: 54px;
+        .header_c_text {
+            display: inline-block;
+            position: relative;
+            margin-right: 50px;
+            &:before {
+                content: "";
+                height: 43px;
+                width: 1px;
+                position: absolute;
+                right: -25px;
+                top: 50%;
+                transform: translateY(-50%);
+                background: #f1f1f1;
+            }
+            h5 {
+                font-size: 13px;
+                font-family: $rob;
+                color: #8f97a7;
+                font-weight: normal;
+                padding-bottom: 8px;
+            }
+            h4 {
+                font-size: 15px;
+                font-family: $rob;
+                color: #0c1832;
+                font-weight: normal;
+            }
+            &:last-child {
+                margin-right: 0px;
+                &:before {
+                    display: none;
+                }
+            }
+            .quote_btn {
+                position: relative;
+                top: 1px;
+            }
+            @media (max-width: 991px) {
+                display: none;
+                &:last-child {
+                    display: block;
+                }
+            }
+            @media (max-width: 480px) {
+                .quote_btn {
+                    padding: 0px 18px;
+                    font-size: 13px;
+                    line-height: 38px;
+                    top: 7.5px;
+                }
+            }
+        }
+    }
+    @media (max-width: 480px) {
+        padding: 10px 0px;
+    }
+}
+ @media (min-width: 992px) {
+.main_menu_area .navbar-nav>li>a:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #FFF;
+    right: 0;
+    bottom: 25%;
+    transition: all 0.3s ease;
+}
+
+.main_menu_area .navbar-nav>li>a:hover:before {
+    width: 100%;
+    left: 0;
+}
+}
+.main_menu_area {
+    background: #052c7d;
+    .navbar.navbar-default {
+        border: none;
+        margin-bottom: 0px;
+        background: transparent;
+        .navbar-header {
+            .navbar-toggle {
+                background: transparent;
+                border-color: rgba(255, 255, 255, .35);
+                .icon-bar {
+                    @media (max-width: 991px) {
+                        background: #fff;
+                    }
+                }
+            }
+        }
+        .navbar-collapse {
+            @media (max-width: 991px) {
+                margin-bottom: 15px;
+            }
+            @media (max-width: 767px) {
+                max-height: 350px;
+            }
+            border-color: rgba(255, 255, 255, .35);
+        }
+        .nav.navbar-nav {
+            margin-left: -15px;
+            @media (max-width: 991px) {
+                margin-top: 0px;
+                margin-bottom: 0px;
+            }
+            @media (max-width: 767px) {
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+            li {
+                margin-right: 40px;
+                @media (max-width: 1199px) {
+                    margin-right: 18px;
+                }
+                @media (max-width: 991px) {
+                    margin-right: 0px;
+                }
+                a {
+                    padding: 0px;
+                    color: #fff;
+                    background: transparent;
+                    font-size: 14px;
+                    font-family: $rob;
+                    text-transform: uppercase;
+                    font-weight: normal;
+                    line-height: 67px;
+                    @media (max-width: 991px) {
+                        line-height: 45px;
+                        i {
+                            float: right;
+                            line-height: 45px;
+                            padding-right: 10px;
+                            font-size: 20px;
+                        }
+                    }
+                    i {
+                        padding-left: 3px;
+                    }
+                }
+                &:last-child {
+                    margin-right: 0px;
+                }
+                &.submenu {
+                    position: relative;
+                    ul {
+                        padding: 0px;
+                        margin: 0px;
+                        border-radius: 0px;
+                        border: none;
+                        @media (min-width: 992px) {
+                            position: absolute;
+                            top: 100%;
+                            left: 0px;
+                            min-width: 232px;
+                            background: #FFF;
+                            text-align: left;
+                            opacity: 0;
+                            transition: all 300ms ease;
+                            visibility: hidden;
+                            z-index: 6;
+                            transform: scaleY(0.5);
+                            transform-origin: 50% 0;
+                            display: block;
+                        }
+                        &:before {
+                            content: "";
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                            border-width: 10px 10px 0 10px;
+                            border-color: #eeeeee transparent transparent transparent;
+                            position: absolute;
+                            right: 24px;
+                            top: 45px;
+                            z-index: 3;
+                            opacity: 0;
+                            transition: all 400ms linear;
+                        }
+                        li {
+                            display: block;
+                            float: none;
+                            margin-right: 0px;
+                            border-bottom: 1px solid #e4e7ef;
+                            @media (max-width: 991px) {
+                                border-bottom: 1px solid rgba(203, 203, 203, .3);
+                            }
+                            a {
+                                line-height: 45px;
+                                color: #494848;
+                                font-family: $rob;
+                                font-weight: normal;
+                                font-size: 14px;
+                                padding: 0px 30px; 
+                                @include transition;
+                                display: block;
+                                @media (max-width: 991px) {
+                                    color: #fff;
+                                    padding: 0px 15px;
+                                }
+                            }
+                            &:last-child {
+                                border-bottom: none;
+                            }
+                            &:hover {
+                                a {
+                                    background: #efeff3;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        ul {
+                            @media (min-width: 992px) {
+                                left: 0px;
+                                visibility: visible;
+                                opacity: 1;
+                                transform: scaleY(1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .nav.navbar-nav.navbar-right {
+            li {
+                .input-group {
+                    width: 200px;
+                    display: block;
+                    position: relative;
+                    top: 15px;
+                    @media (max-width: 991px) {
+                        width: 100%;
+                        top: 0px;
+                    }
+                    input {
+                        padding: 0px;
+                        border: none;
+                        border-radius: 5px;
+                        background: #092767;
+                        height: 37px;
+                        padding: 0px 30px 0px 8px;
+                        color: rgba(255, 255, 255, .5);
+                        font-family: $rob;
+                        font-weight: normal;
+                        @include placeholder {
+                            color: rgba(255, 255, 255, .5);
+                            font-family: $rob;
+                            font-weight: normal;
+                        }
+                        &:focus {
+                            box-shadow: none;
+                        }
+                        @media (max-width: 991px) {
+                            height: 45px;
+                            border-radius: 0px;
+                        }
+                    }
+                    .input-group-btn {
+                        position: absolute;
+                        top: 0px;
+                        right: 0px;
+                        .btn-default {
+                            padding: 0px;
+                            background: transparent;
+                            border: none;
+                            position: absolute;
+                            right: 12px;
+                            top: 8px;
+                            color: #fff;
+                            z-index: 5;
+                            @media (max-width: 991px) {
+                                top: 11px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.affix {
+        position: fixed;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: 9999;
+    }
+}
+
+
+/* End Header Top Area css
+============================================================================================ */

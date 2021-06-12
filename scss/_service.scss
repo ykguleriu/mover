@@ -1,0 +1,256 @@
+/* Service Area css
+============================================================================================ */
+
+.service_area {
+    padding: 100px 0px;
+}
+
+.left_s_list {
+    margin-bottom: 50px;
+    @media(max-width: 991px) {
+        margin-bottom: 50px;
+    }
+    .single_title {
+        padding-bottom: 20px;
+    }
+    p {
+        font-size: 16px;
+        line-height: 30px;
+        font-family: $rob;
+        font-weight: normal;
+        color: #59595b;
+    }
+    .nav.nav-tabs {
+        border: none;
+        li {
+            float: none;
+            display: block;
+            margin-bottom: 5px;
+            a {
+                display: block;
+                border: none;
+                padding: 0px;
+                line-height: 55px;
+                font-family: $rob;
+                font-size: 15px;
+                background: #f5f7f9;
+                padding: 0px 20px;
+                border-radius: 0px;
+                color: $dip;
+                letter-spacing: .45px;
+                cursor: pointer;
+                @include transition;
+            }
+            &:hover,
+            &.active {
+                a {
+                    background: $baseColor;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+.s_list {
+    padding-left: 25px;
+    margin-top: 20px;
+    li {
+        a {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: $rob;
+            font-weight: normal;
+            color: #59595b;
+            position: relative;
+            i {
+                color: $baseColor;
+                position: absolute;
+                left: -25px;
+                top: 50%;
+                transform: translateY(-50%);
+                @include transition;
+            }
+        }
+        &:hover {
+            a {
+                color: $baseColor;
+                i {
+                    left: -20px;
+                }
+            }
+        }
+    }
+}
+
+.image_s_list {
+    margin-bottom: 40px;
+    @media(max-width: 991px) {
+        max-width: 400px;
+        margin: 0px auto 30px;
+    }
+    &.shortcode_list {
+        max-width: 100%;
+        margin-bottom: 0px;
+        margin-top: 30px;
+    }
+    img {
+        width: 100%;
+    }
+    .single_title {
+        padding-bottom: 15px;
+        font-size: 24px;
+        padding-top: 30px;
+    }
+    .more_btn {
+        line-height: 40px;
+        padding: 0px 19px;
+        margin-top: 20px;
+    }
+    &.shortcode_list {
+        .single_title {
+            padding-top: 0px;
+        }
+    }
+}
+
+.download_btn {
+    margin-top: 30px;
+    a {
+        display: block;
+        background: #373540;
+        padding: 13px 18px;
+        font-size: 16px;
+        font-weight: bold;
+        font-family: $rob;
+        color: #fff;
+        margin-bottom: 15px;
+        i {
+            float: right;
+            line-height: 25px;
+            font-size: 25px;
+            color: $baseColor;
+        }
+        &+a {
+            margin-bottom: 0px;
+        }
+    }
+}
+
+
+/* End Service Area css
+============================================================================================ */
+
+
+/* Service Details Area css
+============================================================================================ */
+
+.service_details_area {
+    padding: 100px 0px;
+}
+
+.service_details_inner {
+    .service_d_image_text {
+        img {
+            width: 100%;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-family: $rob;
+            color: $dip;
+            font-size: 24px;
+            padding: 50px 0px 30px 0px;
+            @media(max-width: 480px) {
+                padding-top: 30px;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: $rob;
+            font-weight: normal;
+            color: #59595b;
+            padding-bottom: 30px;
+            &:last-child {
+                padding-bottom: 0px;
+            }
+        }
+    }
+}
+
+.analysis_market {
+    margin-top: 40px;
+    .analysis_text {
+        @media(max-width: 991px) {
+            margin-top: 40px;
+        }
+        h3 {
+            text-transform: uppercase;
+            font-family: $rob;
+            color: $dip;
+            font-size: 24px;
+            padding: 0px 0px 15px 0px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 30px;
+            font-family: $rob;
+            font-weight: normal;
+            color: #59595b;
+        }
+        ul {
+            margin-top: 15px;
+            li {
+                margin-bottom: 5px;
+                a {
+                    font-size: 16px;
+                    line-height: 30px;
+                    font-family: $rob;
+                    font-weight: normal;
+                    color: #59595b;
+                    @include transition;
+                }
+                &:hover {
+                    a {
+                        color: $baseColor;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+}
+
+.service_details_area2 {
+    padding: 100px 0px 50px;
+    @media(max-width: 767px) {
+        padding: 60px 0px 30px 0px;
+    }
+}
+
+.service_list_item_inner {
+    .col-md-6 {
+        &:nth-last-child(-n+2) {
+            .image_s_list {
+                margin-bottom: 0px;
+            }
+        }
+    }
+    .col-xs-6 {
+        @media(max-width: 560px) {
+            width: 100%;
+        }
+        &:nth-last-child(-n+2) {
+            .image_s_list {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+ 
+
+
+/* End Service Details Area css
+============================================================================================ */

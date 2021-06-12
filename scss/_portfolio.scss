@@ -1,0 +1,85 @@
+/* Gallery Area css
+============================================================================================ */
+.gallery_area{
+    padding: 100px 0px;
+    .right_faq_area{
+        @media(max-width: 991px){
+            padding-top: 0px;
+        }
+    }
+    .left_gallery_area{
+        overflow: hidden;
+        clear: both;
+        .l_gallery_inner{
+            .l_gallery_item{
+                width: calc(100% / 3);
+                float: left;
+                overflow: hidden;
+                @media(max-width: 480px){
+                    width: calc(100% / 2);
+                }
+                img{
+                    width: 100%;
+                        transition: all 300ms linear 0s;
+                }
+                &:hover img {
+                        transform: scale(1.02);
+                }
+            }
+        }
+    }
+}
+.right_faq_area{
+    overflow: hidden;
+    clear: both;
+    @media(max-width: 991px){
+        padding-top: 40px;
+    }
+    .panel-group{
+        .panel-default{
+            margin-top: 0px;
+            border-radius: 0px;
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            border-bottom: 1px solid #f2f5f8;
+            .panel-heading{
+                padding: 0px;
+                background: transparent;
+                border: none;
+                border-radius: 0px;
+                .panel-title{
+                    a{
+                        display: block;
+                        line-height: 48px;
+                        font-size: 15px;
+                        font-family: $rob;
+                        font-weight: bold;
+                        color: $pfont;
+                        @media(max-width: 480px){
+                            line-height: 25px;
+                            padding: 12px 0px;
+                        }
+                    }
+                }
+            }
+            .panel-collapse{
+                .panel-body{
+                    border: none;
+                    padding: 0px;
+                    line-height: 26px;
+                    font-family: $rob;
+                    font-size: 15px;
+                    font-weight: normal;
+                    color: $pfont;
+                    padding-bottom: 8px;
+                }
+            }
+            &:first-child{
+                margin-top: -12px;
+            }
+        }
+    }
+}
+/* End Gallery Area css
+============================================================================================ */

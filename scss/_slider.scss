@@ -1,0 +1,275 @@
+/* Main Slider Area css
+============================================================================================ */
+.main_slider_area{
+    .rev_slider{
+        .tp-revslider-mainul{
+            li{
+                z-index: 4 !important;
+                .slotholder{
+                    position: relative;
+                    &:before{
+                        content: "";
+                        background: rgba(0, 0, 0, .55);
+                        position: absolute;
+                        left: 0x;
+                        top: 0px;
+                        z-index: 6;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .tp-bgimg{
+                        z-index: 5 !important;
+                    }
+                }
+                .slider_text_box{
+                    .first_text{
+                        color: rgba(255, 255, 255, .78);
+                        font-family: $robc;
+                        font-weight: 300 !important;
+                    }
+                    .secand_text{
+                        font-weight: bold !important;
+                        text-transform: uppercase;
+                        font-family: $robc; 
+                        color: #fff;
+                    }
+                    .slider_btn{
+                        .quote_btn{
+                            line-height: 54px;
+                            i{
+                                padding-left: 15px;
+                            }
+                        }    
+                    }
+                }
+            }
+        }
+        .ContentZoom-SmallIcon{
+            background: #e7e7e9;
+            height: 42px;
+            width: 42px;
+            text-align: center;
+            color: #0d0d0d;
+            font-size: 15px;
+            line-height: 42px;
+            transition: all 300ms linear !important;
+            padding: 0px !important;
+            color: #000 !important;
+            i{
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translateX(-50%) translateY(-50%);
+                font-size: 17px !important;
+            }
+            &:hover{
+                background: $baseColor;
+                color: #fff !important;
+            }
+        }
+    }
+}
+/* End Main Slider Area css
+============================================================================================ */
+
+/* Feature Slider Area css
+============================================================================================ */
+.feature_slider_area{
+    padding-bottom: 100px;
+    .feature_row{
+        margin-left: -18px;
+        margin-right: -18px;
+        @media(max-width: 767px){
+            margin-right: -15px;
+        }
+    }
+}
+.feature_slider_inner{
+    margin-top: -60px;
+    z-index: 10;
+    .item{
+        padding: 0px 18px;
+    }
+    .feature_s_item{
+        text-align: center;
+        box-shadow:0px 0px 14px rgba(136, 159, 229, 0.2);
+        padding: 20px 28px 30px 28px; 
+        background: #fff;
+        margin-bottom: 15px;
+        .social-link{
+            height: 47px;
+            fill: #cddeff;
+        }
+        h4{
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 24px;
+            color: $baseColor;
+            font-family: $robc;
+            padding: 15px 0px 22px 0px;
+        }
+        p{
+            font-size: 15px;
+            line-height: 26px;
+            color: #434345;
+            font-family: $rob;
+            font-weight: normal;
+        }
+    }
+    .owl-nav{
+        .owl-prev, .owl-next{
+            height: 42px;
+            width: 42px;
+            background: #f2f5fb;
+            font-size: 15px;
+            color: #b5c7ed;
+            text-align: center;
+            line-height: 40px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            @include transition;
+            &:hover{
+                background: $baseColor;
+                color: #fff;
+            }
+        }
+        .owl-prev{
+            left: -60px;
+            @media (max-width: 1199px){
+                left: 0px;
+            }
+            @media (max-width: 767px){
+                display: none;
+            }
+        }
+        .owl-next{
+            right: -60px;
+            @media (max-width: 1199px){
+                right: 0px;
+            }
+            @media (max-width: 767px){
+                display: none;
+            }
+        }
+    }
+    .owl-dots{
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -40px;
+        @media(max-width: 480px){
+            width: 100%;
+            text-align: center;
+        }
+        .owl-dot{
+            height: 10px;
+            width: 10px;
+            background: #dedede;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 10px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            &.active{
+                background: $baseColor;
+            }
+        }
+    }
+}
+/* End Feature Slider Area css
+============================================================================================ */
+
+/* Testimonials Slider Area css
+============================================================================================ */
+.testimonials_area{
+    padding: 80px 0px;
+}
+.testimonials_inner{
+    position: relative;
+    @media(max-width: 991px){
+        padding: 0px 30px;
+    }
+    .owl-prev, .owl-next{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+        color: #d6d6d6;
+        cursor: pointer;
+        @include transition;
+        &:hover{
+            color: $baseColor;
+        }
+    }
+    .owl-prev{
+        left: 0px;
+    }
+    .owl-next{
+        right: 0px;
+    }
+}
+.testimonials_slider{
+    max-width: 750px;
+    margin: auto;
+    .item{
+        text-align: center;
+        img{
+            width: auto;
+            max-width: 100%;
+            text-align: center;
+            display: inline-block;
+        }
+        p{
+            font-size: 18px;
+            color: $gray;
+            font-family: $rob;
+            font-weight: normal;
+            line-height: 33px;
+            padding: 40px 0px 25px 0px;
+            @media(max-width: 500px){
+                font-size: 15px;
+                line-height: 28px;
+            }
+        }
+        h4{
+            color: $dip;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: .45px;
+        }
+    }
+}
+/* End Testimonials Slider Area css
+============================================================================================ */
+
+/* Client Slider Area css
+============================================================================================ */
+.client_logo_area{
+    background: #f5f7f9;
+    &.white_client{
+        background: #fff;
+    }
+}
+.client_slider{
+    .item{
+        text-align: center;
+        line-height: 170px;
+        img{
+            max-width: 100%;
+            width: auto;
+            display: inline-block;
+            -webkit-filter: grayscale(100%); 
+            filter: grayscale(100%);
+            @include transition;
+            cursor: pointer;
+            &:hover{
+                -webkit-filter: grayscale(0%); 
+                filter: grayscale(0%);
+            }
+        }
+    }
+}
+/* End Client Slider Area css
+============================================================================================ */

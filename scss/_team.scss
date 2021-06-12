@@ -1,0 +1,80 @@
+
+/* Our Team Area css
+============================================================================================ */
+
+.our_team_area{
+    background: #f5f7f9;
+    padding: 100px 0px;
+}
+.our_team_slider{
+    .team{
+        text-align: center;
+        .team_img{
+            position: relative;
+            z-index: 3;
+            &:before{
+                background: rgba(39, 97, 216, 0.6);
+                width: 100%;
+                height: 100%;
+                content: '';
+                top: 0;
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                transform: scaleX(0);
+                transition: all 0.6s ease 0s;
+                z-index: 1;
+            }
+            &:after{
+                width: 100%;
+                height: 100%;
+                content: '';
+                top: 0;
+                left: 0;
+                bottom: 0;
+                position: absolute;
+                background: rgba(39, 97, 216, 0.6);
+                transform: scaleY(0);
+                transition: all 0.6s ease 0s;
+                z-index: 1;
+            }
+            .img{
+                overflow: hidden;
+                img{
+                    width: 100%;
+                    @include transition;
+                }
+            }
+        }    
+        h2{
+            font-size: 20px;
+            font-family: $rob;
+            font-weight: bold;
+            color: $dip;
+            text-transform: uppercase;
+            padding: 20px 0px 3px 0px;
+        }
+        p{
+            font-family: $rob;
+            font-weight: normal;
+            color: $pfont;
+            font-size: 14px;
+        }
+        &:hover{
+            .team_img{
+                // &:before{
+                //     transform: scaleX(1);
+                // }
+                // &:after{
+                //     transform: scaleY(1);
+                // }
+            }
+            h2{
+                color: $baseColor;
+            }
+        }
+    }
+}
+
+/* End Our Team Area css
+============================================================================================ */

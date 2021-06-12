@@ -1,0 +1,38 @@
+/*font Variables*/
+
+$rob: 'Roboto', sans-serif;
+$robc: 'Roboto Condensed', sans-serif;
+
+/*Color Variables*/
+
+$baseColor: #2761d8;
+$dip: #2f2f30;
+$pfont: #58585a;
+$gray: #59595b;
+// Mixins
+@mixin transition($property: all, $duration: 300ms, $animate: linear, $delay:0s) {
+    transition: $property $duration $animate $delay;
+}
+
+// Placeholder Mixins
+@mixin placeholder {
+    &.placeholder {
+        @content;
+    }
+    &:-moz-placeholder {
+        @content;
+    }
+    &::-moz-placeholder {
+        @content;
+    }
+    &::-webkit-input-placeholder {
+        @content;
+    }
+}
+
+.col-md-offset-right-1 {
+    margin-right: 8.33333333%;
+}
+
+// Font family link
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700,700i|Roboto:300,300i,400,400i,500,500i,700,900');

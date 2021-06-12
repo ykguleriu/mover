@@ -1,0 +1,120 @@
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    &:hover,
+    &:focus {
+        text-decoration: none;
+        outline: none;
+    }
+}
+
+.row.m0 {
+    margin: 0px;
+}
+
+.p0 {
+    padding: 0px;
+}
+
+body {
+    line-height: 24px;
+    font-size: 14px;
+    font-family: $rob;
+    font-weight: normal;
+    color: $pfont;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0px;
+    padding: 0px;
+}
+
+.display_table {
+    display: table;
+    width: 100%;
+}
+
+.display_table_row {
+    display: table-row;
+}
+
+.display_table_cell {
+    display: table-cell;
+    float: none !important;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Roboto", sans-serif;
+    font-weight: normal;
+    color: #59595b;
+}
+
+.mb-3 {
+    margin-bottom: 25px;
+}
+
+.mt-3 {
+    margin-top: 25px;
+}
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mb-0 {
+    margin-bottom: 0;
+}
+
+.form-control {
+    height: 40px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    box-shadow: none;
+}
+
+iframe {
+    border: none;
+}
+
+
+/* Main title css
+============================================================================================ */
+
+.main_title {
+    text-align: center;
+    padding-bottom: 50px;
+    h5 {
+        font-size: 15px;
+        color: $pfont;
+        text-transform: uppercase;
+        opacity: .5;
+    }
+    h2 {
+        font-size: 30px;
+        font-family: $rob;
+        font-weight: bold;
+        color: $gray;
+        text-transform: uppercase;
+    }
+}
+
+
+/* End Main title css
+============================================================================================ */

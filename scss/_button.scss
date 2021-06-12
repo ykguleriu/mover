@@ -1,0 +1,219 @@
+/* Button Area css
+============================================================================================ */
+.quote_btn{
+    display: inline-block;
+    padding: 0px 26px;
+    background: #2ecc71;
+    line-height: 47px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 15px;
+    font-family: $rob;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: $baseColor;
+        height: 250px;
+        width: 300px;
+        border-radius: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 100%;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+        z-index: -1;
+    }
+    &:hover, &:focus{
+        color: #fff;
+        &:before{
+            bottom: -50px;
+        }
+    }
+}
+
+.b_get_btn{
+    display: inline-block;
+    padding: 0px 60px;
+    background: transparent;
+    border: 1px solid #fff;
+    line-height: 65px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 17px;
+    text-transform: uppercase;
+    font-family: $rob;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    @include transition;
+    z-index: 2;
+    i{
+        padding-left: 20px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: #2ecc71;
+        height: 280px;
+        width: 330px;
+        border-radius: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 100%;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+        z-index: -1;
+    }
+    &:hover, &:focus{
+        color: #fff;
+        border: 1px solid #2ecc71;
+        &:before{
+            bottom: -50px;
+        }
+    }
+}
+
+.more_btn{
+    display: inline-block;
+    padding: 0px 32px;
+    background: transparent;
+    border: 1px solid $baseColor;
+    line-height: 50px;
+    border-radius: 5px;
+    color: $baseColor;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: $rob;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    @include transition;
+    z-index: 2;
+    i{
+        padding-left: 10px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: $baseColor;
+        height: 280px;
+        width: 330px;
+        border-radius: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: 100%;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+        z-index: -1;
+    }
+    &:hover, &:focus{
+        color: #fff;
+        border: 1px solid $baseColor;
+        &:before{
+            bottom: -50px;
+        }
+    }
+}
+/* End Button Area css
+============================================================================================ */
+
+/* Submit Button Area css
+============================================================================================ */
+.submit_blue{
+    display: inline-block;
+    background: transparent;
+    border: 1px solid $baseColor;
+    line-height: 50px;
+    width: 165px;
+    height: 48px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 14px;
+    line-height: 48px;
+    text-transform: uppercase;
+    font-family: $rob;
+    font-weight: normal;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    @include transition;
+    padding: 0px;
+    outline: none !important;
+    box-shadow: none !important;
+    z-index: 2;
+    i{
+        padding-left: 10px;
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        background: $baseColor;
+        height: 280px;
+        width: 330px;
+        border-radius: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+        bottom: -50px;
+        -webkit-transition: all .7s;
+        -o-transition: all .7s;
+        transition: all .7s;
+        z-index: -1;
+    }
+    &:hover, &:focus{
+        color: $baseColor;
+        &:before{
+            bottom: 100%;
+        }
+    }
+}
+/* End Submit Button Area css
+============================================================================================ */
+
+.image-source-link {
+	color: #98C3D1;
+}
+
+.mfp-with-zoom .mfp-container,
+.mfp-with-zoom.mfp-bg {
+	opacity: 0;
+	-webkit-backface-visibility: hidden;
+	/* ideally, transition speed should match zoom duration */
+	-webkit-transition: all 0.3s ease-out; 
+	-moz-transition: all 0.3s ease-out; 
+	-o-transition: all 0.3s ease-out; 
+	transition: all 0.3s ease-out;
+}
+
+.mfp-with-zoom.mfp-ready .mfp-container {
+		opacity: 1;
+}
+.mfp-with-zoom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+}
+
+.mfp-with-zoom.mfp-removing .mfp-container, 
+.mfp-with-zoom.mfp-removing.mfp-bg {
+	opacity: 0;
+}
