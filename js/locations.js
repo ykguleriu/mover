@@ -1,24 +1,18 @@
 /*
  * jVector Maps
- */ 
+ */
 
-var markers = 
-[{ latLng: [41.50, -87.37], name: 'Chicago' }, 
-{ latLng: [32.46, -96.46], name: 'Dallas' }, 
-{ latLng: [36.10, -115.12], name: 'Las Vegas' }, 
-{ latLng: [34.3, -118.15], name: 'Los Angeles' }, 
-{ latLng: [40.43, -74.00], name: 'New York City' }, 
-{ latLng: [53.412910, -8.243890], name: 'Ireland' }, 
-{ latLng: [19.0760, 72.8777], name: 'Mumbai' }, 
-{ latLng: [42.697708, 23.321868], name: 'Sofia, Bulgia' }, 
-{ latLng: [40.014986, -105.270546], name: 'Boulder, CO' }];
+var markers =
+[{ latLng: [41.45728550683887, 31.790874473779226], name: 'Zonguldak' },
+{ latLng: [41.273716793259396, 31.42763787349545], name: 'Kdz. Ereğli' },
+{ latLng: [41.62348929954051, 32.323173643840484], name: 'Bartın' }];
 
 $(function() {
     "use strict";
     var $jvectormapDiv = $('#jvectormap');
     if ($jvectormapDiv.length && $.fn.vectorMap) {
         $jvectormapDiv.vectorMap({
-            map: 'world_mill',
+            map: 'turkey_1_mill_en',
             zoomOnScroll: false,
             hoverOpacity: 0.7,
             regionStyle: {
